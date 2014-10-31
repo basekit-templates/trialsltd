@@ -57,10 +57,13 @@ button.btn,
 	font-size: @font-swatch7-font-size;
 	font-weight: @font-swatch5-font-weight;
 	margin-top: 6px;
-	padding: 12px 10px 12px 38px;
+	padding: 12px 10px;
 	&:hover {
 		padding: 12px 10px 12px 38px;
 		.transition(all, .5s, ease-in);
+	}
+	@media @mobile {
+		padding: 12px 10px 12px 38px;
 	}
 }
 
@@ -369,15 +372,10 @@ div[role="main"] .widget {
 	ul li {
 		margin-right: 2.33%;
 		margin-bottom: 2%;
-		width: 31%;
-		@media @tablet {
-			width: 48%;
-			padding-bottom: 50%;
-		}
+		padding-bottom: 50%;
+		width: 48%;
 		&:nth-child(even) {
-			@media @tablet {
-				margin-right: 0;
-			}
+			margin-right: 0;
 		}
 		@media @mobile {
 			width: 100%;
@@ -442,6 +440,14 @@ div[role="main"] .widget {
 // Slideshow
 
 .widget.responsiveslideshow {
+	.image-wrapper:hover .content-wrapper {
+		opacity: 1;
+	}
+	.content-wrapper {
+		opacity: 0;
+		.transition(all, .5s, ease-out);
+
+	}
 	.btn-play, &:hover span.btn-play {
 		display: none;
 	}
@@ -525,7 +531,6 @@ div[role="main"] .widget {
 }
 
 .widget.responsiveslideshow, .widget.responsiveslideshow .slideshow-image-list {
-	min-height: 550px;
 	height: auto;
 	@media @tablet {
 		min-height: 350px;

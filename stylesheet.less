@@ -39,7 +39,7 @@
 	"font9":  == Feature Subtitle
 	"font10": == Logo
 	=============================== */
-	
+
 
 // -----------------------------
 // Media Queries
@@ -141,10 +141,11 @@ pre {
 			width: 100%;
 		}
 		.icons {
-			float: left;
+			text-align: left;
 			@media @mobile {
 				float: none;
 				margin-top: 10px;
+				text-align: center;
 			}
 		}
 		span a {
@@ -172,8 +173,23 @@ pre {
 			text-align: center;
 			width: 100%;
 		}
-		a {
+		a, p {
 			color: @color-swatch6;
+		}
+		form {
+			margin: 0;
+			input {
+				margin-bottom: 5px;
+			}
+			button {
+				background-color: @color-swatch2;
+			}
+		}
+		.bk-profile-socialicons {
+			margin: 0;
+			a {
+				text-indent: 9999px!important;
+			}
 		}
 	}
 }
@@ -185,7 +201,12 @@ pre {
 	display: inline-block;
 	margin-right: 4.5%;
 	width: 35%;
+	vertical-align: middle;
+	@media @tablet {
+		width: 80%;
+	}
 	@media @mobile {
+		text-align: center;
 		width: 100%;
 	}
 }
@@ -198,22 +219,36 @@ pre {
 		}
 	}
 	&.logo {
+		max-width: 30%;
+		vertical-align: top;
 		@media @mobile {
+			margin-bottom: 12px;
+			max-width: 100%;
 			text-align: center;
 		}
 		img {
+			margin-right: 12px;
 			vertical-align: middle;
 		}
 	}
-	&.companyname a {
-		color: @font-swatch10-color;
-		font-family: @font-swatch10-font-family;
-		font-size: @font-swatch10-font-size;
-		font-weight: @font-swatch10-font-weight;
-		line-height: @font-swatch10-line-height;
+	&.companyname {
+		margin-left: -4px;
+		max-width: 70%;
+		vertical-align: bottom;
 		@media @mobile {
-			font-size: bkscale(@font-swatch10-font-size, 0.9);
-			line-height: bkscale(@font-swatch10-line-height, 0.9);	
+			margin-left: 0;
+			max-width: 100%;
+		}
+		a {
+			color: @font-swatch10-color;
+			font-family: @font-swatch10-font-family;
+			font-size: @font-swatch10-font-size;
+			font-weight: @font-swatch10-font-weight;
+			line-height: @font-swatch10-line-height;
+			@media @mobile {
+				font-size: bkscale(@font-swatch10-font-size, 0.9);
+				line-height: bkscale(@font-swatch10-line-height, 0.9);	
+			}
 		}
 	}
 }
@@ -241,14 +276,33 @@ pre {
 		width: 100%;
 	}
 	ul li {
-		&:last-child a:after {
-			display: none;
+		&:last-child a {
+			padding-right: 0;
+			@media @tablet {
+				padding-right: 20px;
+			}
 		}
 		a {
 			padding: 0 25px 0 0;
 			@media @tablet {
 				padding: 0 20px;
 			}
+		}
+	}
+	.bk-overlay {
+		@media @tablet {
+			height: 40px;
+			top: -40px!important;
+			right: 10px!important;
+		}
+		@media @mobile {
+			height: 50px!important;
+			width: 50px!important;
+			top: 25px!important;
+			right: 0!important;
+			left: 0!important;
+			margin: 0 auto;
+			z-index: 8001!important;
 		}
 	}
 }
@@ -307,7 +361,7 @@ pre {
 .widget .extendednavigation a.pull {
 	@media @tablet {
 		right: 10px;
-		top: -45px;
+		top: -40px;
 	}
 	@media @mobile {
 		background-color: @color-swatch6;
@@ -380,8 +434,16 @@ pre {
 		max-height: 400px;
 	}
 	.spare {
-		background: @color-swatch2;
-		background: linear-gradient(180deg, lighten(@color-swatch2, 15%) 10%, @color-swatch2 60%);
+		background-color: lighten(@color-swatch2, 3%);
+
+		background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 40%); /* FF3.6+ */
+		background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.5)), color-stop(40%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+		background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* Chrome10+,Safari5.1+ */
+		background-image: -o-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* Opera 11.10+ */
+		background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* IE10+ */
+		background-image: linear-gradient(to bottom,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=4 ); /* IE6-9 */
+
 		@shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.1);
 		.box-shadow(@shadow);
 		display: inline-block;
