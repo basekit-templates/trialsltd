@@ -58,12 +58,14 @@ button.btn,
 	font-weight: @font-swatch5-font-weight;
 	margin-top: 6px;
 	padding: 12px 10px;
-	&:hover {
-		padding: 12px 10px 12px 38px;
-		.transition(all, .5s, ease-in);
-	}
 	@media @mobile {
 		padding: 12px 10px 12px 38px;
+	}
+	&:hover {
+		.transition(all, .5s, ease-in);
+		@media @mobile {
+			padding: 12px 10px 12px 38px;
+		}
 	}
 }
 
