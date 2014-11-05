@@ -207,6 +207,7 @@ pre {
 		width: 80%;
 	}
 	@media @mobile {
+		margin-right: 0;
 		text-align: center;
 		width: 100%;
 	}
@@ -230,6 +231,9 @@ pre {
 		img {
 			margin-right: 12px;
 			vertical-align: middle;
+			@media @mobile {
+				margin-right: 0;
+			}
 		}
 	}
 	&.companyname {
@@ -377,6 +381,7 @@ pre {
 		border-bottom: 1px solid fade(@color-swatch7, 10%);
 		.border-radius(0 0 4px 4px);
 		left: 0;
+		right: 0;
 		margin: 5px auto;
 		width: 50px;
 		height: 45px;
@@ -434,6 +439,7 @@ pre {
 	vertical-align: bottom;
 	@media @tablet {
 		padding-top: 350px;
+		min-height: 450px
 	}
 	@media @mobile {
 		padding-top: 250px;
@@ -463,7 +469,6 @@ pre {
 			padding: 30px;
 		}
 		@media @mobile {
-			max-width: 90%;
 			padding: 20px;
 		}
 	}
@@ -488,9 +493,6 @@ pre {
 div[role="main"] {
 	background: @color-swatch6;
 	padding: 45px 30px;
-	@media @mobile {
-		padding: 60px 30px;
-	}
 }
 
 
