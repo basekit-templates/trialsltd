@@ -246,12 +246,18 @@ pre {
 			font-size: @font-swatch10-font-size;
 			font-weight: @font-swatch10-font-weight;
 			line-height: @font-swatch10-line-height;
+			position: relative;
+			top: 6px;
 			@media @mobile {
 				font-size: bkscale(@font-swatch10-font-size, 0.9);
 				line-height: bkscale(@font-swatch10-line-height, 0.9);	
 			}
 		}
 	}
+}
+
+.widget.logo + .widget.companyname a {
+	top: initial;
 }
 
 

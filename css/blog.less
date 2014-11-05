@@ -11,7 +11,9 @@
 	margin: 0 0 30px;
 	padding: 30px;
 	position: relative;
-
+	@media @mobile {
+		padding: 15px;
+	}
 	h1.blog-post-title {
 		font-size: @font-swatch1-font-size;
 		font-weight: @font-swatch2-font-weight;
@@ -94,6 +96,10 @@
 .blog-post-summary {
 	padding: 10px 0 25px;
 	text-align: left;
+	@media @mobile {
+		font-size: bkscale(@font-swatch5-font-size, 0.85);
+		line-height: bkscale(@font-swatch5-line-height, 0.85);
+	}
 }
 
 .blog-post-content {
