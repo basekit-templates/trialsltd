@@ -121,11 +121,24 @@ pre {
 	background-color: @color-swatch7;
 	padding: 0;
 	.contact {
-		font-size: 0;
+		// font-size: 0;
 		@media @tablet {
 			padding: 0 25px;
 		}
 	}
+
+	// Profile Widgets
+	// -----------------------------
+
+	// Address
+	.bk-profile-address p {
+		color: @color-swatch6;
+	}
+	// Form
+	.widget.profile form fieldset input {
+		margin-bottom: 0;
+	}
+
 	&.profile span {
 			color: @color-swatch6;
 			font-family: @font-swatch4-font-family;
@@ -140,7 +153,6 @@ pre {
 		color: @color-swatch6;
 		margin: 0;
 		text-align: left;
-		margin-right: 5%;
 		width: 50%;
 		vertical-align: middle;
 		@media @mobile {
@@ -155,7 +167,8 @@ pre {
 				text-align: center;
 			}
 		}
-		span a {
+		span a,
+		a {
 			color: @color-swatch6;
 			background-color: transparent;
 			box-shadow: none;
@@ -165,6 +178,7 @@ pre {
 			&:hover {
 				height: 32px;
 				width: 32px;
+				text-decoration: none;
 			}
 		}
 	}
@@ -197,7 +211,7 @@ pre {
 		.bk-profile-socialicons {
 			margin: 0;
 			a {
-				text-indent: 9999px!important;
+				text-indent: 9999px !important;
 			}
 		}
 	}
