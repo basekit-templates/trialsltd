@@ -14,7 +14,7 @@
 
 /*	===============================
 	Colour Swatches
-	===============================	
+	===============================
 	"color1": == Background
 	"color2": == Contrast colour
 	"color3": == Button colour
@@ -27,7 +27,7 @@
 
 /*	===============================
 	Font Swatches
-	===============================	
+	===============================
 	"font1":  == Heading 1
 	"font2":  == Heading 2
 	"font3":  == Heading 3
@@ -62,11 +62,11 @@
 }
 
 .transition (@prop: all, @time: 0.5s, @ease: ease) {
-	-webkit-transition:  @prop @time @ease;  
+	-webkit-transition:  @prop @time @ease;
 	-moz-transition:     @prop @time @ease;
-	-ms-transition:      @prop @time @ease; 
+	-ms-transition:      @prop @time @ease;
 	-o-transition:       @prop @time @ease;
-	transition: 		 @prop @time @ease;  
+	transition: 		 @prop @time @ease;
 }
 
 .rotate (@deg) {
@@ -276,7 +276,7 @@ pre {
 			top: 6px;
 			@media @mobile {
 				font-size: bkscale(@font-swatch10-font-size, 0.9);
-				line-height: bkscale(@font-swatch10-line-height, 0.9);	
+				line-height: bkscale(@font-swatch10-line-height, 0.9);
 			}
 		}
 	}
@@ -353,12 +353,12 @@ pre {
 		}
 		&:hover ul {
 			background: lighten(@color-swatch1, 7%);
-			border-bottom: 1px solid fade(@color-swatch5, 18%); 
-			border-left: 1px solid fade(@color-swatch5, 12%); 
-			border-right: 1px solid fade(@color-swatch5, 12%); 
+			border-bottom: 1px solid fade(@color-swatch5, 18%);
+			border-left: 1px solid fade(@color-swatch5, 12%);
+			border-right: 1px solid fade(@color-swatch5, 12%);
 			border-top: 1px solid fade(@color-swatch5, 24%);
 			li {
-				border-bottom: 1px solid fade(@color-swatch5, 15%); 
+				border-bottom: 1px solid fade(@color-swatch5, 15%);
 				@media @tablet {
 					padding: 5px;
 				}
@@ -480,7 +480,6 @@ pre {
 		background-image: -o-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* Opera 11.10+ */
 		background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* IE10+ */
 		background-image: linear-gradient(to bottom,  rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 40%); /* W3C */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=4 ); /* IE6-9 */
 
 		@shadow: 7px 7px 0px 0px rgba(50, 50, 50, 0.1);
 		.box-shadow(@shadow);
@@ -513,7 +512,7 @@ pre {
 
 .widget.feature + div[role="main"] + .widget {
 	margin-top: 80px;
-} 
+}
 
 div[role="main"] {
 	background: @color-swatch6;
