@@ -1,63 +1,73 @@
 {
-	"name":"Trials LTD",
-	"thumbnail":"trialsltd.png",
-	"screenshot":"trialsltd.png",
-    "templateType":"standard",
-    "tags": { "en": ["minimal", "modern", "light", "social", "minimal", "classic"] },
-    "pageTypes":["home"],
-    "colorSwatches":
-    {
+    "name": "Trials LTD",
+    "thumbnail": "trialsltd.png",
+    "screenshot": "trialsltd-screenshot.jpg",
+    "templateType": "standard",
+    "tags": {
+        "en": [
+            "minimal",
+            "modern",
+            "light",
+            "social",
+            "minimal",
+            "classic"
+        ]
+    },
+    "pageTypes": [
+        "home"
+    ],
+    "colorSwatches": {
         "Swatch 1": {
-            "color1":"#e8e6e0",
-            "color2":"#51604b",
-            "color3":"#141414",
-            "color4":"#141414",
-            "color5":"#4b4b4b",
-            "color6":"#ffffff",
-            "color7":"#141414"
+            "color1": "#e8e6e0",
+            "color2": "#51604b",
+            "color3": "#141414",
+            "color4": "#141414",
+            "color5": "#4b4b4b",
+            "color6": "#ffffff",
+            "color7": "#141414"
         },
         "Swatch 2": {
-            "color1":"#e8e6e0",
-            "color2":"#b8860b",
-            "color3":"#dad8d4",
-            "color4":"#141414",
-            "color5":"#4b4b4b",
-            "color6":"#ffffff",           
-            "color7":"#778899"
+            "color1": "#e8e6e0",
+            "color2": "#b8860b",
+            "color3": "#dad8d4",
+            "color4": "#141414",
+            "color5": "#4b4b4b",
+            "color6": "#ffffff",
+            "color7": "#778899"
         },
         "Swatch 3": {
-            "color1":"#e8e6e0",
-            "color2":"#4682B4",
-            "color3":"#dad8d4",
-            "color4":"#141414",
-            "color5":"#4b4b4b",
-            "color6":"#ffffff",
-            "color7":"#4b4b4b"
+            "color1": "#e8e6e0",
+            "color2": "#4682B4",
+            "color3": "#dad8d4",
+            "color4": "#141414",
+            "color5": "#4b4b4b",
+            "color6": "#ffffff",
+            "color7": "#4b4b4b"
         },
         "Swatch 4": {
-            "color1":"#e8e6e0",
-            "color2":"#C19F74",
-            "color3":"#dad8d4",
-            "color4":"#141414",
-            "color5":"#4b4b4b",
-            "color6":"#ffffff",
-            "color7":"#222F38"
+            "color1": "#e8e6e0",
+            "color2": "#C19F74",
+            "color3": "#dad8d4",
+            "color4": "#141414",
+            "color5": "#4b4b4b",
+            "color6": "#ffffff",
+            "color7": "#222F38"
         },
         "Swatch 5": {
-            "color1":"#e8e6e0",
-            "color2":"#81725D",
-            "color3":"#dad8d4",
-            "color4":"#141414",
-            "color5":"#4b4b4b",
-            "color6":"#ffffff",
-            "color7":"#76948a"
+            "color1": "#e8e6e0",
+            "color2": "#81725D",
+            "color3": "#dad8d4",
+            "color4": "#141414",
+            "color5": "#4b4b4b",
+            "color6": "#ffffff",
+            "color7": "#76948a"
         }
     },
-    "images":[
+    "images": [
         "images/feature.jpg"
     ],
     "fontSwatch": {
-       "title": "Volkorn & Open Sans",
+        "title": "Volkorn & Open Sans",
         "font1": {
             "font-family": "\"Vollkorn\", Georgia, serif",
             "font-size": "38px",
@@ -108,7 +118,7 @@
             "color-hover": "@color-swatch4",
             "background-color": "@color-swatch6",
             "background-color-hover": "transparent"
-         },
+        },
         "font7": {
             "font-family": "\"Vollkorn\", Georgia, serif",
             "font-size": "16px",
